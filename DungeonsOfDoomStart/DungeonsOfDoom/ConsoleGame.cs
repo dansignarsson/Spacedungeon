@@ -113,7 +113,7 @@ namespace DungeonsOfDoom
 
         private static void DisplayWorld()
         {
-            Console.BackgroundColor = ConsoleColor.DarkGray;
+            Console.BackgroundColor = ConsoleColor.Black;
 
 
             //Console.ForegroundColor = ConsoleColor.Black;
@@ -129,18 +129,23 @@ namespace DungeonsOfDoom
 
                         Console.Write(" P");
                         Console.ResetColor();
-                        Console.BackgroundColor = ConsoleColor.DarkGray;
+                        Console.BackgroundColor = ConsoleColor.Black;
 
                     }
                     else if (room.Monster != null)
                     {       Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write(" M");
                     Console.ResetColor();
-                        Console.BackgroundColor = ConsoleColor.DarkGray;
+                        Console.BackgroundColor = ConsoleColor.Black;
 
                     }
                     else if (room.Item != null)
-                        Console.Write(" I", Color.DarkGreen);
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(" I");
+                        Console.ResetColor();
+                        Console.BackgroundColor = ConsoleColor.Black;
+                    }
                     else
                         Console.Write(" .");
                 }
@@ -157,7 +162,9 @@ namespace DungeonsOfDoom
             {
                 Console.WriteLine($"Monster health: {world[player.X, player.Y].Monster.Health}");
             }
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Health: {player.Health}");
+            Console.ResetColor();
             TextUtils.CoolText($"Monster: {Monster.MonsterCount}", 0);
             Console.WriteLine("Backpack: ");
 
