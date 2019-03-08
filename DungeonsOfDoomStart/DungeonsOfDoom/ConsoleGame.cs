@@ -107,6 +107,8 @@ namespace DungeonsOfDoom
                         world[x, y].Item = new Sword("Sword", 5);
                     else if (percentage < 20)
                         world[x, y].Item = new Potion("Potion", 5);
+                    else if (percentage < 30)
+                        world[x, y].Item = new Shield("Shield", 5); 
                 }
             }
         }
