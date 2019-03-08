@@ -12,7 +12,7 @@ namespace DungeonsOfDoom
 
         public override void PickUp(Character characterToPick)
         {
-            characterToPick.Health += 100; 
+            characterToPick.Health += 50;    // JÄVLA JONAS ÄR DU DUM ELR
         }
     }
 }
