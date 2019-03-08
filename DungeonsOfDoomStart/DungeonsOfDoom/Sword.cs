@@ -8,7 +8,12 @@ namespace DungeonsOfDoom
     {
         public Sword(string name, int attackPoints) : base(name, attackPoints)
         {
-
+            
+           
+        }
+        public override void PickUp(Character monsterAttack)
+        {
+            monsterAttack.Health -= 5;
         }
 
     }
