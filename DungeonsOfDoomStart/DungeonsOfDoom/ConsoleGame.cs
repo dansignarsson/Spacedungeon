@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 
 namespace DungeonsOfDoom
 {
@@ -44,7 +43,7 @@ namespace DungeonsOfDoom
         {
             if (world[player.X, player.Y].Monster != null)
             {
-                Console.WriteLine("There is a monster in the room! Woho!");
+                //Console.WriteLine("There is a monster in the room! Woho!");
 
                 world[player.X, player.Y].Monster.Fight(player); // monster mot player  
 
@@ -55,6 +54,11 @@ namespace DungeonsOfDoom
 
                 if (world[player.X, player.Y].Monster.Health == 0)
                 {
+                    if (world[player.X, player.Y].Monster.Name == "Skeleton")
+                        world[player.X, player.Y].Monster.Name = "Pile of bones";
+                    else
+                        world[player.X, player.Y].Monster.Name = "Zombie remains";
+
                     player.Backpack.Add(world[player.X, player.Y].Monster);
                     world[player.X, player.Y].Monster = null;
                     Monster.MonsterCount--;
@@ -107,18 +111,15 @@ namespace DungeonsOfDoom
                         world[x, y].Item = new Sword("Sword", 5);
                     else if (percentage < 20)
                         world[x, y].Item = new Potion("Potion", 5);
-                    else if (percentage < 30)
-                        world[x, y].Item = new Shield("Shield", 5); 
+                    else if (percentage < 25)
+                        world[x, y].Item = new Shield("Shield", 5);
                 }
             }
         }
 
         private static void DisplayWorld()
         {
-            Console.BackgroundColor = ConsoleColor.Black;
 
-
-            //Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine(" _________________________________________________________________________________");
             for (int y = 0; y < world.GetLength(1); y++)
             {
@@ -126,21 +127,23 @@ namespace DungeonsOfDoom
                 {
                     Console.Write(" |");
                     Room room = world[x, y];
-                    if (player.X == x && player.Y == y)
-                    { Console.ForegroundColor = ConsoleColor.Blue;
 
+                    if (player.X == x && player.Y == y)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
                         Console.Write(" P");
                         Console.ResetColor();
                         Console.BackgroundColor = ConsoleColor.Black;
-
                     }
+
                     else if (room.Monster != null)
-                    {       Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write(" M");
-                    Console.ResetColor();
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(" M");
+                        Console.ResetColor();
                         Console.BackgroundColor = ConsoleColor.Black;
-
                     }
+
                     else if (room.Item != null)
                     {
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -155,7 +158,6 @@ namespace DungeonsOfDoom
             }
             Console.WriteLine(" ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
             Console.ResetColor();
-
         }
 
         private static void DisplayStats()
@@ -164,10 +166,14 @@ namespace DungeonsOfDoom
             {
                 Console.WriteLine($"Monster health: {world[player.X, player.Y].Monster.Health}");
             }
+            Console.Write($"Health: ");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Health: {player.Health}");
+            Console.WriteLine(player.Health);
             Console.ResetColor();
-            TextUtils.CoolText($"Monster: {Monster.MonsterCount}", 0);
+            Console.Write($"Monster: ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(Monster.MonsterCount);
+            Console.ResetColor();
             Console.WriteLine("Backpack: ");
 
             foreach (var item in player.Backpack)

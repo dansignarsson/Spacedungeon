@@ -12,7 +12,7 @@ namespace DungeonsOfDoom
 
         public override void PickUp(Character characterToPick)
         {
-            characterToPick.Health += 100; // Klart som fan att man ska få 100 + i hälsa. En shield är ju awesome!!!! :) 
+            characterToPick.Health += 40; // Är du helt ifrån vettet?
         }
     }
 }
