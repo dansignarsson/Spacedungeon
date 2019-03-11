@@ -1,0 +1,9 @@
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\bin\Debug\netstandard2.0\Utils.deps.json
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\bin\Debug\netstandard2.0\Utils.dll
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\bin\Debug\netstandard2.0\Utils.pdb
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\obj\Debug\netstandard2.0\Utils.csprojAssemblyReference.cache
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\obj\Debug\netstandard2.0\Utils.csproj.CoreCompileInputs.cache
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\obj\Debug\netstandard2.0\Utils.AssemblyInfoInputs.cache
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\obj\Debug\netstandard2.0\Utils.AssemblyInfo.cs
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\obj\Debug\netstandard2.0\Utils.dll
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\Utils\obj\Debug\netstandard2.0\Utils.pdb

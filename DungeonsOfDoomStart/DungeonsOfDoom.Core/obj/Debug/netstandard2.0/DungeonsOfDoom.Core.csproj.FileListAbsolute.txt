@@ -1,0 +1,9 @@
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\bin\Debug\netstandard2.0\DungeonsOfDoom.Core.deps.json
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\bin\Debug\netstandard2.0\DungeonsOfDoom.Core.dll
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\bin\Debug\netstandard2.0\DungeonsOfDoom.Core.pdb
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\obj\Debug\netstandard2.0\DungeonsOfDoom.Core.csprojAssemblyReference.cache
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\obj\Debug\netstandard2.0\DungeonsOfDoom.Core.csproj.CoreCompileInputs.cache
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\obj\Debug\netstandard2.0\DungeonsOfDoom.Core.AssemblyInfoInputs.cache
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\obj\Debug\netstandard2.0\DungeonsOfDoom.Core.AssemblyInfo.cs
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\obj\Debug\netstandard2.0\DungeonsOfDoom.Core.dll
+C:\git\git\Spacedungeon\DungeonsOfDoomStart\DungeonsOfDoom.Core\obj\Debug\netstandard2.0\DungeonsOfDoom.Core.pdb
