@@ -76,7 +76,6 @@ namespace DungeonsOfDoom
                 {
                     player.Backpack.Add(world[player.X, player.Y].Item);
 
-
                     world[player.X, player.Y].Item.PickUp(player);
 
                     world[player.X, player.Y].Item = null;
