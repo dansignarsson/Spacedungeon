@@ -207,6 +207,26 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DungeonsOfDoom.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DungeonsOfDoom.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DungeonsOfDoom.Core.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -680,11 +700,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DungeonsOfDoom.Core/1.0.0": {
+      "type": "project",
+      "path": "../DungeonsOfDoom.Core/DungeonsOfDoom.Core.csproj",
+      "msbuildProject": "../DungeonsOfDoom.Core/DungeonsOfDoom.Core.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "DungeonsOfDoom.Core >= 1.0.0",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -694,11 +726,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dan\\Documents\\DungeonsOfDoomStartEMILYJONASDAN3\\DungeonsOfDoomStartEMILYJONASDAN3\\DungeonsOfDoomStartEMILYJONAS\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "projectUniqueName": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
       "projectName": "DungeonsOfDoom",
-      "projectPath": "C:\\Users\\Dan\\Documents\\DungeonsOfDoomStartEMILYJONASDAN3\\DungeonsOfDoomStartEMILYJONASDAN3\\DungeonsOfDoomStartEMILYJONAS\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "projectPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
       "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dan\\Documents\\DungeonsOfDoomStartEMILYJONASDAN3\\DungeonsOfDoomStartEMILYJONASDAN3\\DungeonsOfDoomStartEMILYJONAS\\DungeonsOfDoomStart\\DungeonsOfDoom\\obj\\",
+      "outputPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -716,7 +748,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj": {
+              "projectPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj"
+            },
+            "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\Utils\\Utils.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

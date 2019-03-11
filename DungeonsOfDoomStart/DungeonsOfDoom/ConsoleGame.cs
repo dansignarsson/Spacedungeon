@@ -1,5 +1,11 @@
-﻿using System;
+﻿using DungeonsOfDoom.Core;
+using DungeonsOfDoom.Core.Characters.Monsters;
+using DungeonsOfDoom.Core.Characters.Players;
+using DungeonsOfDoom.Core.Items.DefenseItems;
+using DungeonsOfDoom.Core.Items.OffenseItems;
+using System;
 using System.Collections.Generic;
+using Utils;
 
 namespace DungeonsOfDoom
 {
@@ -14,7 +20,7 @@ namespace DungeonsOfDoom
             CreatePlayer();
             CreateWorld();
 
-            Console.WriteLine("Welcome to Spacedungeon");
+            TextUtils.CoolText("Welcome to Spacedungeon", 20);
             Console.WriteLine("Press any key to play...");
             Console.ReadKey();
 
