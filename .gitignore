@@ -1,7 +1,7 @@
 
-.vs/*
-DungeonsOfDoom/bin/*
-DungeonsOfDoom/obj/*
+DungeonsOfDoomStart/.vs/*
+DungeonsOfDoomStart/bin/*
+DungeonsOfDoomStart/obj/*
 
 # Created by https://www.gitignore.io/api/windows,visualstudio
 # Edit at https://www.gitignore.io/?templates=windows,visualstudio
