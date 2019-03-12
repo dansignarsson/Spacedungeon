@@ -720,23 +720,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dan\\.nuget\\packages\\": {},
+    "C:\\Users\\jonas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "projectUniqueName": "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
       "projectName": "DungeonsOfDoom",
-      "projectPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
-      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\obj\\",
+      "projectPath": "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -749,11 +749,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj": {
-              "projectPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj"
+            "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj": {
+              "projectPath": "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\DungeonsOfDoom.Core\\DungeonsOfDoom.Core.csproj"
             },
-            "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\git\\git\\Spacedungeon\\DungeonsOfDoomStart\\Utils\\Utils.csproj"
+            "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Projects\\Git\\Spacedungeon\\DungeonsOfDoomStart\\Utils\\Utils.csproj"
             }
           }
         }

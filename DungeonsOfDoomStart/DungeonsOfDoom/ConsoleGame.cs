@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using Utils;
 
+// Här sker spellokigen. The magic...
+
 namespace DungeonsOfDoom
 {
     static class ConsoleGame
